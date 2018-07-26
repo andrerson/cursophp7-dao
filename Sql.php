@@ -46,6 +46,5 @@
 
     echo "outro outro";
 
-    echo "novo teste" ; 
     
 ?>

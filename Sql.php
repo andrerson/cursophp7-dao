@@ -42,7 +42,8 @@
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
     }
-
     echo "teste git";
+
+    echo "outro outro";
     
 ?>

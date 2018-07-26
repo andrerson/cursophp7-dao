@@ -45,5 +45,7 @@
     echo "teste git";
 
     echo "outro outro";
+
+    echo "novo teste" ; 
     
 ?>

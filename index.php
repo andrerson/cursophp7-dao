@@ -25,7 +25,17 @@
     // carrega uma lista de usuarios buscando pelo login
 
 
-    $search = Usuario::search("jo");
+//     $search = Usuario::search("jo");
 
-    echo json_encode($search);
+//     echo json_encode($search);
+
+
+//     carrega um usuarios usando o login e a senha
+
+    $usuario = new Usuarios();
+    $usuario->login("root","123");
+
+    echo $usuario;
+
+    
  ?>

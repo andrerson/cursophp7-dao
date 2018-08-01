@@ -60,6 +60,23 @@
 
         }
 
+        public static function getList(){
+            $sql = new Sql();
+
+            return $sql->select("SELECT * FROM tb_usuarios ORDER BY desnome;");//ajuste para deslogin
+
+        }
+
+
+        public static function search($login){
+
+            $sql = new Sql();
+
+            return $sql->select("SELECT * FROM tb_usuarios WHERE desnome LIKE :SEARCH ? ORDER BY desnome", array(
+                ':SEARCH'=>"%".$login."%"
+            ));
+        }
+
         public function __toString(){
             return json_encode(array(
                 "idusuario"=>$this->getIdusuario(),

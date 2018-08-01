@@ -7,9 +7,25 @@
     // echo json_encode($usuairos);
     
     
-    $root = new Usuario();
+    // carrega um usuario
+    // $root = new Usuario();
 
-    $root->loadByid(3);
+    // $root->loadByid(3);
 
-    echo $root;
-?>
+    // echo $root;
+
+
+    // carrega uma lista de usuarios
+
+    // $lista = Usuario::getList();
+
+    // echo json_encode($lista);
+
+
+    // carrega uma lista de usuarios buscando pelo login
+
+
+    $search = Usuario::search("jo");
+
+    echo json_encode($search);
+ ?>
